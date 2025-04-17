@@ -71,7 +71,3 @@ ls -la | grep "py" ?
 ## Configuration
 
 Your API keys and preferences are stored in `~/.config/ai_shell/config.json`. You can update these settings at any time using the '--config' command within the application.
-
-## License
-
-MIT License - See LICENSE file for details. 
