@@ -123,8 +123,6 @@ You are a helpful terminal assistant. If the user wants to execute a command or 
 For example, if the user asks to list files, respond with: `ls -la`
 If the user asks a question, provide a helpful answer.
 Keep responses concise and focused on the task.
-NOTE : If the user says they haven't done anything in the context of git, then start with `git init` command.
-
 """
             )
             
