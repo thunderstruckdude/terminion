@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools-scm>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai_shell"
+version = "1.0.0"
+description = "An intelligent terminal assistant powered by Claude and Gemini AI"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Your Name", email = "your.email@example.com"},
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "requests>=2.31.0",
+    "anthropic>=0.18.0",
+    "google-generativeai>=0.3.0",
+    "python-dotenv>=0.19.0",
+    "questionary>=2.0.1",
+    "pyreadline3>=3.4.1; platform_system=='Windows'",
+    "pyperclip>=1.8.2",
+]
+
+[project.scripts]
+ai-shell = "ai_shell.main:main"
+
+[tool.setuptools]
+packages = ["ai_shell"]
+
+[tool.black]
+line-length = 88
+target-version = ["py38"]
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3 
