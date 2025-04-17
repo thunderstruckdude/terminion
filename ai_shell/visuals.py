@@ -1,23 +1,23 @@
 from typing import Dict
 from .utils import format_text, reset_format
 
-# ASCII Art for Santra
-SANTRA_ART = r"""
-   _____              _                 
-  / ____|            | |                
- | (___   __ _ _ ___ | |_ _ __ __ _ 
-  \___ \ / _` | '__  | __| '__/ _` |
-  ____) | (_| | |  | | |_| | | (_| |   
- |_____/ \__,_|_|  |_\__ |_|  \__,_|  
+# ASCII Art for Terminion
+TERMINION_ART = r"""
+  _______                  _       _             
+ |__   __|                (_)     (_)            
+    | | ___ _ __ _ __ ___  _ _ __  _  ___  _ __  
+    | |/ _ \ '__| '_ ` _ \| | '_ \| |/ _ \| '_ \ 
+    | |  __/ |  | | | | | | | | | | | (_) | | | |
+    |_|\___|_|  |_| |_| |_|_|_| |_|_|\___/|_| |_|
 """
 
 
 def get_welcome_message() -> str:
     """Return formatted welcome message with ASCII art."""
     return f"""
-{format_text('cyan', bold=True)}{SANTRA_ART}{reset_format()}
+{format_text('cyan', bold=True)}{TERMINION_ART}{reset_format()}
 {format_text('yellow')}╭──────────────────────────────────────────────╮{reset_format()}
-{format_text('yellow')}│  Welcome to Santra Shell Assistant!          │{reset_format()}
+{format_text('yellow')}│  Welcome to Terminion Shell Assistant!       │{reset_format()}
 {format_text('yellow')}│  Your AI-powered terminal companion          │{reset_format()}
 {format_text('yellow')}╰──────────────────────────────────────────────╯{reset_format()}
 {format_text('green')}Type 'help' for available commands or ask me anything!{reset_format()}
@@ -41,7 +41,7 @@ def format_info(message: str) -> str:
 
 def format_command_prompt() -> str:
     """Format the command input prompt."""
-    return f"{format_text('magenta', bold=True)}santra ❯ {reset_format()}"
+    return f"{format_text('magenta', bold=True)}terminion ❯ {reset_format()}"
 
 def format_command_suggestion(command: str) -> str:
     """Format command suggestions."""

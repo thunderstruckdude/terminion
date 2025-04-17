@@ -16,10 +16,6 @@ def main():
     setup_readline()
 
     assistant = AIAssistant(config=config, model_name="gemini")
-
-    print(f"""\n{format_text('green', bold=True)}Welcome to Santra AI Shell!
-Powered by Jayesh AI on {platform.system()}
-{reset_format()}""")
     
     while True:
         try:
